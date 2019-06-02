@@ -6,14 +6,14 @@ body{
     overflow-x:hidden;
     font-family: 'Lato', sans-serif;
     color:#505962;
+    min-width:100%;
 }
 
 .offset:before{
     display: block;
     content:"";
     height:4rem;
-    margin-top:-4rem;
-    
+    margin-top:-4rem;    
 }
 
 /*---Nav--*/
@@ -29,7 +29,7 @@ body{
 
 .navbar-brand img{
     
-height: 3rem;
+height: 3.5rem;
     
 }
 
@@ -49,12 +49,67 @@ padding-top:.8rem;
 color:#DA5C5C;
 }
 
+/*---arrow---*/
+#arrow{
+    width:4.5rem;
+    height:4.5rem;
+    border:0.3rem solid white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color:white;
+    text-align: center;
+    margin-left: 50vw;    
+    margin-top: 5rem;
+    overflow: hidden;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); 
+    cursor: pointer;
+}
+
+.ar2{
+    position:relative;
+    bottom: 2.7rem;
+    
+}
+.ar3{
+    position:relative;
+    bottom: 8.5rem;
+}
+.fa-angle-down{
+    -webkit-animation: arrow 1.2s infinite linear;
+    animation: arrow 1.2s infinite linear;
+}
+
+@-webkit-keyframes arrow{
+    0%{-webkit-transform: translateY(-80px);transform: translateY(-80px)}
+    50%{-webkit-transform: translateY(0px);transform: translateY(0px)}
+    100%{-webkit-transform: translateY(80px);transform: translateY(80px)}
+}
+
+@keyframes arrow{
+    0%{-webkit-transform: translateY(-80px);transform: translateY(-80px)}
+    50%{-webkit-transform: translateY(0px);transform: translateY(0px)}
+    100%{-webkit-transform: translateY(80px);transform: translateY(80px)}
+}
 
 /*---landing page---*/
 
 .home-inner{
-    background-image: url(img/brain_img.jpg);
-    
+    background-image: url(img/brain_img.jpg); 
+    min-width: 100vw;
+}
+#home{
+    min-width: 100vw;
+}
+.landing{
+    min-width: 100vw;
+}
+.home-wrap{
+    min-width: 100vw;
+}
+.first-text{
+    text-align: center;
+    min-width:100%;
 }
 .caption{
     width: 100%;
@@ -65,8 +120,7 @@ color:#DA5C5C;
     color:white;
     text-transform: uppercase;
 }
-.caption h1{
-    
+.caption h1{    
     font-size:3.8rem;
     font-weight: 700;
     letter-spacing: .3rem;
@@ -79,22 +133,6 @@ color:#DA5C5C;
     text-shadow:.1rem .1rem .5rem black;
     padding-bottom: 1.6rem;  
 }
-.btn-lg{
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.3rem;
-    font-size:1.1rem;
-    color:white;
-    background-color: #DA5C5C;
-    border-color:black;
-}
-.btn-lg:hover{
-   
-    color:white;
-    background-color: transparent;
-    border-color:black;
-    
-}
 
 
 
@@ -102,30 +140,10 @@ color:#DA5C5C;
 .narrow{
     width:75%;
     margin: 1.5rem auto;
-    padding-top: 2rem;
-    
+    padding-top: 2rem;    
 }
 .narrow h1 {
     font-size: 2.4rem;
-}
-
-
-.btn-secondary{
-    border-width: medium;
-    border-radius:0;
-    text-transform: uppercase;
-    font-size:1.2rem;
-    padding: .6rem 1.2rem;
-    margin: 1rem;
-    color:white;
-    background-color: #DA5C5C;  
-}
-
-
-.btn-secondary:hover{
-    color:black;
-    background-color:white; 
-    
 }
 
 /*==== technology section====*/
@@ -153,9 +171,7 @@ h3.heading{
 .heading-underline2{
     width:10rem;
     height:.2rem;
-    background-color:#DA5C5C;
-    
-   
+    background-color:#DA5C5C;   
 }
 .heading-underline3{
     width:23rem;
@@ -196,6 +212,10 @@ feature h3{
     margin-top: 1.5rem;
 }
 
+.research-text{
+    font-size: 1.1rem;
+}
+
 
 /*===company section====*/
 .company img{
@@ -209,9 +229,14 @@ feature h3{
 }
 .company-hr{
     border-top: .2rem solid #DA5C5C;
-    
 }
-
+/*===publications section====*/
+ul.publications{
+    margin: 2rem 0;
+}
+li.publications{
+    margin: .5rem 0;   
+}
 
 /*===contact===*/
 footer{
@@ -248,24 +273,39 @@ hr.socket{
     font-size: 1.2rem;
     padding-bottom: 1.2rem;  
 }
-.btn-lg{
 
-    padding: .5rem 1rem;
-    font-size:1rem;
-}
-    .narrow h1 {
+.narrow h1 {
     font-size: 1.5rem;
 }
 
-    .company img{
+.company img{
     width: 50%;
     display: block;
-        margin:0 auto;
+    margin:0 auto;
         
 }
-    
-    
-    
+/*---Nav--*/
+
+.navbar {
+    font-size:.9rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,0.6)!important;
+    width:100vw;
+}
+
+.navbar-brand img{
+    height: 3rem;
+}
+.navbar-nav li{
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+color:white;
+padding-top:.8rem;
+}
+
+
     
     
 }
