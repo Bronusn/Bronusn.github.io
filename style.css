@@ -144,7 +144,7 @@ body{
     font-size: 2.4rem;
 }
 iframe{
-    width: 65rem;
+    width: 85rem;
     height: 36.7rem;
     cursor: pointer;
 }
@@ -155,7 +155,7 @@ iframe{
 .photo{
     width: 28%;
     display: inline;
-    margin: 3rem 1rem 2rem;
+    margin: 3rem 2rem 2rem 2rem;
     cursor: pointer;
 }
 #myModal{
