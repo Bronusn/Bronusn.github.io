@@ -145,18 +145,19 @@ body{
 }
 iframe{
     width: 85rem;
-    height: 36.7rem;
+    height: 34.7rem;
     cursor: pointer;
 }
 .photobox{
-    margin: 0 0 0 1.8rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .photo{
-    width: 28%;
+    width: 30%;
     display: inline;
-    margin: 3rem 2rem 2rem 2rem;
+    margin: 1rem 1rem 1rem 1rem;
     cursor: pointer;
+    padding: 2rem
 }
 #myModal{
     width: 50%;
@@ -605,8 +606,8 @@ iframe{
     
    #cookieConsent {
     background-color: rgba(20,20,20,0.8);
-    height: 18rem;
-    width: 20rem;
+    height: 50%;
+    width: ;
     font-size: 1.5rem;
     color: #ccc;
     line-height: 4rem;
@@ -614,6 +615,7 @@ iframe{
     position: fixed;
     top: 6rem;
     left: 1.5rem;
+    right:1.5rem;   
     display: none;
     z-index: 10;
     border-radius: ;
@@ -624,15 +626,14 @@ iframe{
     cursor: none;
     height: 5rem;
     width: 1rem;
-    margin: -1rem 0 0 0;
+    margin: -5rem 0 2rem 0;
     font-weight: bold;
 }
     #cookieConsent a.cookieConsentOK {
     background-color: ;
     color: white;
     display: inline-block;
-    border-radius: 2rem;
-    
+    border-radius: ;
     cursor: none;
     position: relative;
     right: 5rem;
