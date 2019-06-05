@@ -5,17 +5,15 @@ $("#arrow").on("click", function () {
 });
 
 
-$(document).ready(function(){
-$('#hamb').click(function(){
-$('#navbarResponsive').stop().slideToggle(300);
-});
-});
-   
-$(document).ready(function(){
-$('#mintro, #mhome, #mtechnology, #mresearch, #mpublications, #mcompany, #mcontact').click(function(){
-$('#navbarResponsive').stop().slideToggle(300);
-});
-});
+function myFunction() {
+  var x = document.getElementById("navbarResponsive");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}   
+
 
 $("#mcontact, #ncontact").on("click", function () {
     $("body, html").animate({

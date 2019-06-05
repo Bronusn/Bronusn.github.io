@@ -16,9 +16,7 @@ body{
 }
 
 /*---Nav--*/
-.mobile-nav{
-    display: none;
-}
+
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
@@ -144,8 +142,8 @@ body{
     font-size: 2.4rem;
 }
 iframe{
-    width: 85rem;
-    height: 34.7rem;
+    width: 68vw;
+    height: 35vw;
     cursor: pointer;
 }
 .photobox{
@@ -314,7 +312,9 @@ ul.publications{
 li.publications{
     margin: .5rem 0;   
 }
-
+.special-link{
+    color: #DA5C5C;
+}
 /*===contact===*/
 footer{
     background-color: #DA5C5C;
@@ -461,11 +461,8 @@ hr.socket{
     margin-top: 1rem;
 }
 /*===Nav===*/
-.not-mobile-nav{
-    display: none;
-}
-.mobile-nav{
-    display: inline;
+#hamb{
+     right: 2vw;   
 }
 .navbar {
     font-size: .9rem;
@@ -473,6 +470,7 @@ hr.socket{
     background: rgba(0,0,0,0.8)!important;
     width: 100vw;
     padding: .73rem 0;
+    z-index: 5;
 }
 
 .navbar-brand img{
@@ -605,17 +603,17 @@ iframe{
     /*===cookies====*/
     
    #cookieConsent {
-    background-color: rgba(20,20,20,0.8);
+    background-color: rgba(0,0,0,0.8);
     height: 50%;
-    width:90% ;
+    width:100% ;
     font-size: 1.5rem;
     color: #ccc;
     line-height: 4rem;
     padding: 2rem 2rem 2rem;
     position: fixed;
-    top: 5rem;
-    left: 1.5rem;
-    right:1.5rem;  
+    top: 20%;
+    left: 0;
+    right: 0;  
        
     display: none;
     z-index: 10;
