@@ -151,11 +151,16 @@ iframe{
 }
 
 .photo{
-    width: 30%;
+    width: 28%;
     display: inline;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem .5rem 2rem;
     cursor: pointer;
-    padding: 2rem
+    padding: 1.5rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: #DA5C5C;
+    
+        
 }
 #myModal{
     width: 50%;
@@ -311,6 +316,10 @@ ul.publications{
 }
 li.publications{
     margin: .5rem 0;   
+}
+li.publications2{
+    margin:.5rem 0;
+    color:#DA5C5c
 }
 .special-link{
     color: #DA5C5C;
